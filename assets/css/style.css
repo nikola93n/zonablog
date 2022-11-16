@@ -2,6 +2,8 @@
     --white-color: #fff;
     --dark: #333;
     --transition: 0.3s;
+    --accent-color: #ff0000;
+    --border-color: #cecece;
 }
 * {
     margin: 0;
@@ -11,6 +13,7 @@
 ul {
     list-style: none;
     margin-bottom: 0;
+    padding-left: 0 !important;
 }
 a {
     text-decoration: none;
@@ -19,10 +22,10 @@ a {
 header {
     background-color: var(--dark);
     color: var(--white-color);
-    height: 110px;
+    height: 110px;    
 }
 .logo {
-    width: 80px;
+    width: 80px;    
 }
 header nav ul li:not(:first-child) {
     margin-left: 20px;
@@ -50,13 +53,85 @@ header nav a:hover::before {
     transform: scaleX(1);
 }
 header .icons a:hover {
-    color: red;
+    color: var(--accent-color);
     transition: var(--transition);
 }
+.menu-btn {
+    padding-left: 30px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    display: none;
+}
+.menu-btn:hover {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    ul.main-menu {
+        display: block !important;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background: var(--dark);
+        width: 50%;
+        height: 100%;
+        transform: translateY(-500px);        
+        border-top: var(--border-color) 1px solid;
+        transition: transform 0.5s ease-in-out;  
+        z-index: -10;      
+    }
+    ul.main-menu.show {
+        transform: translateY(0px);
+    }
+    header nav ul li:not(:first-child) {
+        margin-left: 0px;
+    }
+    ul.main-menu li {
+        padding: 10px;
+        border-bottom: 1px solid var(--border-color);
+        font-size: 16px;
+    }
+    ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+}
 
-
-
-
-
-
+/* === HERO SECTION === */
+.custom-paragraph {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;    
+    margin-top: 40px;
+    /* border-radius: 50px; */
+}
+.custom-background {    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;      
+}
+.siringe {
+    width: 30px;
+}
+img.siringe {
+    -webkit-animation: move 1s infinite  alternate;
+    animation: move 1s infinite  alternate;
+}
+img.siringe {
+    -webkit-animation: move 1s infinite  alternate;
+    animation: move 1s infinite  alternate;
+}
+@-webkit-keyframes move {
+    0% { transform: translateY(-10px); }
+    100% { transform: translateY(20px); }
+}
+@keyframes move {
+    0% { transform: translateY(-10px); }
+    100% { transform: translateY(20px); }
+}
 
