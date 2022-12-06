@@ -7,6 +7,7 @@
     <title>Zonablog - Redesign Medical Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -16,35 +17,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between px-sm-3">
-                    <div class="left-side d-flex justify-content-between">
-                        <div class="logo">
-                            <a href="index.html"><img class="img-fluid" src="img/ZonaMedicine-Logo.png"
-                                    alt="Zona Medicine Logo"></a>
-                        </div>
-                        <nav class="d-flex">
-                            <ul class="d-flex align-items-center main-menu">
-                                <li><a href="index.html">Početna</a></li>
-                                <li><a href="#">Hirurgija</a></li>
-                                <li><a href="#">Interna</a></li>
-                                <li><a href="#">Farmakologija</a></li>
-                                <li><a href="#">Onkologija</a></li>
-                                <li><a href="#">O nama</a></li>
+                    <header>
+                        <a href="#" class="logo"><img class="img-fluid" src="img/ZonaMedicine-Logo.png"
+                                alt="Zona Medicine Logo"></a>
+                        <div class="navigation">
+                            <ul class="menu">
+                                <div class="close-btn"></div>
+                                <li class="menu-item"><a href="#">Home</a></li>
+                                <li class="menu-item">
+                                    <a class="sub-btn" href="#">Dropwdown <i class="bi bi-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-item"><a href="#">Sub Item 01</a></li>
+                                        <li class="sub-item"><a href="#">Sub Item 02</a></li>
+                                        <li class="sub-item"><a href="#">Sub Item 03</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="sub-btn" href="#">With Sub-dropdown <i class="bi bi-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-item"><a href="#">Sub Item 01</a></li>
+                                        <li class="sub-item"><a href="#">Sub Item 02</a></li>
+                                        <li class="sub-item"><a href="#">Sub Item 03</a></li>
+                                        <li class="sub-item"><a href="#">Sub Item 04</a></li>
+                                        <li class="sub-item more">
+                                            <a class="more-btn" href="#">More Items <i
+                                                    class="bi bi-chevron-right"></i></a>
+                                            <ul class="more-menu">
+                                                <li class="more-item"><a href="#">More Item 01</a></li>
+                                                <li class="more-item"><a href="#">More Item 02</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#">Services</a></li>
+                                <!-- <li class="menu-item"><a href="#">About</a></li> -->
+                                <!-- <li class="menu-item"><a href="#">Contact</a></li> -->
                             </ul>
-                        </nav>
-                    </div>
-                    <div class="icons d-flex align-items-center">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <i class="bi bi-search ms-3"></i>
-                        <!-- Hamburger icon -->
-                        <button href="#" class="menu-btn"><i class="bi bi-list"></i></button>
-                    </div>
+                        </div>
+                        <div class="menu-btn"></div>
+                    </header>
                 </div>
             </div>
         </div>
     </header>
     <!-- Header Section End -->
     <!-- Hero Section Start -->
-    <section class="hero-section pb-5" style="background-image: url(img/pattern-grid.png);">
+    <section class="hero-section pb-5 pt-5" style="background-image: url(img/pattern-grid.png);">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 py-5 text-center">
@@ -178,13 +196,45 @@
                 </div>
                 <div class="col-12 col-md-9 d-flex flex-column justify-content-center">
                     <div class="did-you-know-text">
-                        <h3>Da li ste znali?</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos corporis eum nostrum eveniet
-                            omnis exercitationem dolorum ratione? Minus, necessitatibus quidem magni mollitia incidunt,
-                            facere
-                            atque, debitis voluptate omnis neque amet?</p>
-                        <button class="btn-custom-banner mt-3">Saznaj još</button>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h3>Da li ste znali?</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos corporis eum
+                                        nostrum eveniet omnis exercitationem dolorum ratione? Minus, necessitatibus
+                                        quidem magni mollitia incidunt, facere atque, debitis voluptate omnis neque
+                                        amet?</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Da li ste znali 2?</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                        that it has a more-or-less normal distribution of letters, as opposed to using
+                                        'Content here, content here', making it look like readable English. </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Da li ste znali 3?</h3>
+                                    <p>Your eyes blink around 20 times a minute. That’s over ten million times a year!
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Da li ste znali 4?</h3>
+                                    <p>You produce about 40,000 litres of spit in your lifetime. Or to put it another
+                                        way, enough spit to fill around five hundred bathtubs – yuck!</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Da li ste znali 5?</h3>
+                                    <p>You are about 1cm taller in the morning when you first get up than when you go to
+                                        bed. This is because during the day the soft cartilage between your bones gets
+                                        squashed and compressed.</p>
+                                </div>
+                            </div>
+                            <button class="btn-custom-banner swiper-button-next mt-4 mb-1">Saznaj još</button>
+                            <div class="swiper-pagination mt-4"></div>
+                        </div>
+                        <!-- <div class="pulse"></div> -->
                     </div>
+
                 </div>
             </div>
         </div>
@@ -555,6 +605,8 @@
     </div> -->
 
     <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
