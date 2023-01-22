@@ -284,7 +284,7 @@ header.sticky .menu-item .sub-menu {
     }
     .close-btn {
         position: absolute;
-        background: url(/img/nav/close.svg) no-repeat;
+        background: url(../../img/nav/close.svg) no-repeat;
         width: 40px;
         height: 40px;
         background-size: 25px;
@@ -296,7 +296,7 @@ header.sticky .menu-item .sub-menu {
         z-index: 999999999;
     }
     .menu-btn {
-        background: url(/img/nav/menu.svg) no-repeat;
+        background: url(../../img/nav/menu.svg) no-repeat;
         width: 40px;
         height: 40px;
         background-size: 30px;

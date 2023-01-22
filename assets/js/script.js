@@ -48,5 +48,5 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-
-
+// Initialize AOS
+AOS.init();
